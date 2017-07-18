@@ -1,0 +1,15 @@
+*.pyc
+.pydevproject
+.settings
+.idea
+logs
+gikoo.db
+.DS_Store
+*.txt
+*.rdb
+*.patch
+*.xls
+*.db
+*.bat
+chatbot.zip
+/micro_services/app_spider_chatbot/chatbot/*
