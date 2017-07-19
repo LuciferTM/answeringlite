@@ -1,5 +1,6 @@
 # -*- coding:utf-8 -*-
-
+from util.const import BASEFILE_PATH, CLEANFILE_PATH, RAWFILE_PATH
+from answeringlite_util.util import query_question
 FORMAT_TEXT_RESPONSE = '<xml> <ToUserName>%s</ToUserName>\
         <FromUserName>%s</FromUserName>\
         <CreateTime>%s</CreateTime><MsgType>text</MsgType>\
@@ -39,5 +40,7 @@ class AnswerMessageProcessor(object):
         else:
             #TODO
             #这里需要区分是哪个公司那个文件，现在先使用小米的参数进行
-            return
+            FilePath = BASEFILE_PATH
+            return query_question(FilePath, query_str)
+
 

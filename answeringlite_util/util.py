@@ -243,3 +243,16 @@ def query(dictfilename, mmfilename, question, stoplist, indexfilename, documents
         print("推荐文章：{}".format(f))
 
     return an
+
+def query_question(base_path, query_str):
+    swfile = open("stopwords_lite.txt")
+    stoplist = [line.strip() for line in swfile.readlines()]
+    swfile.close()
+
+    doclist = preparedoc(os.path.join(base_path, "cleaned"))
+
+    answer_frag = query(base_path + "/" + "baike.dict", base_path + "/" + "baike.mm", query_str, stoplist, base_path
+            + '/baike.index',doclist, base_path + '/baike.model',base_path + '/baike.LDAmodel', base_path + '/baike.LDAindex')
+    commentpos = answer_frag.rfind("[")
+    answer = answer_frag[:commentpos]
+    return answer

@@ -1,4 +1,7 @@
 # -*- coding:utf-8 -*-
+BASEFILE_PATH = "answeringlite"
+RAWFILE_PATH = BASEFILE_PATH
+CLEANFILE_PATH = "cleaned"
 
 class CONST:
     class ConstError(TypeError): pass
