@@ -43,4 +43,4 @@ class AnswerMessageProcessor(object):
             FilePath = BASEFILE_PATH
             return query_question(FilePath, query_str)
 
-
+answerMessageProcessor = AnswerMessageProcessor()

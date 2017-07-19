@@ -5,7 +5,7 @@ from rest_framework.parsers import XMLParser
 from rest_framework.views import APIView
 from util.log_helper import gikoo_logger
 from util.const import WECHAT
-from wechat.message_util import MessageProcessor, AnswerMessageProcessor
+from wechat.message_util import MessageProcessor, answerMessageProcessor
 logger = gikoo_logger()
 
 #XMLParser supports only 'application/xml'
@@ -15,7 +15,7 @@ class TextXMLParser(XMLParser):
 '''公众号服务器入口 '''
 class WechatLinkIn(APIView):
     allow_anonymous = True
-    parser_classes = (TextXMLParser,)#WSGIRequest
+    # parser_classes = (TextXMLParser,)#WSGIRequest
     token = WECHAT.TOKEN
 
     def get(self, request, *args, **kwargs):
@@ -38,7 +38,7 @@ class WechatLinkIn(APIView):
         try:
             msg = request.DATA
             #正常处理
-            resp = AnswerMessageProcessor.process_message(msg)
+            resp = answerMessageProcessor.process_message(msg)
             return HttpResponse(resp)
         except Exception,e:
             print e
