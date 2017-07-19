@@ -1,6 +1,6 @@
 # -*- coding:utf-8 -*-
 from util.const import BASEFILE_PATH, CLEANFILE_PATH, RAWFILE_PATH
-from answeringlite_util.util import query_question
+from answeringlite_util.tool import query_question
 FORMAT_TEXT_RESPONSE = '<xml> <ToUserName>%s</ToUserName>\
         <FromUserName>%s</FromUserName>\
         <CreateTime>%s</CreateTime><MsgType>text</MsgType>\

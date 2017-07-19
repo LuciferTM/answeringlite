@@ -1,5 +1,5 @@
 # -*- coding:utf-8 -*-
-BASEFILE_PATH = "answeringlite"
+BASEFILE_PATH = "/Users/lucifer/github/answeringlite/answeringlite_util/answeringlite"
 RAWFILE_PATH = BASEFILE_PATH
 CLEANFILE_PATH = "cleaned"
 

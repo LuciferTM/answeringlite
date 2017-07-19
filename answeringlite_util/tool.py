@@ -2,6 +2,7 @@
 import os
 import jieba
 from gensim import corpora, models, similarities
+from util.const import BASEFILE_PATH
 
 def cleanFileByDir(bfile_path, rfile_path, cfile_path):
     '''
@@ -245,7 +246,8 @@ def query(dictfilename, mmfilename, question, stoplist, indexfilename, documents
     return an
 
 def query_question(base_path, query_str):
-    swfile = open("stopwords_lite.txt")
+    swfile_path = os.path.join(BASEFILE_PATH,"stopwords_lite.txt")
+    swfile = open(swfile_path)
     stoplist = [line.strip() for line in swfile.readlines()]
     swfile.close()
 
