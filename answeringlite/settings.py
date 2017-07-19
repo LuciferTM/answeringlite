@@ -1,5 +1,36 @@
 # Django settings for answeringlite project.
 
+
+
+
+GIKOO = {
+    'api_url_prefix': '/api/v1/',
+    # 'api_url_prefix_v2': '/api/v2/',
+    # 'api_url_prefix_v3': '/api/v3/',
+    #
+    # 'sub_url': 'tcp://localhost:5557',
+    # 'mongo': {'host': 'localhost', 'port': 27017, 'db': 'mps'},
+    # 'redis': {'host': 'localhost', 'port': 6379},
+    # 'redis_timeout': 10,
+    # 'cache_timeout': 60 * 60,
+    # 'cache_prefix': 'gk_cache',
+    # 'sleep': 60,  # seconds
+    # 'long_polling_url': "http://uyhd000329.chinaw3.com:8008",
+    # 'static_root' : '../webapps/gikoo',
+    # 'search_engine_url': "http://localhost:9200/",
+    # # "search_engine_index": "iap",
+    # "operation_dir": "../operation",
+    # "store_upload_dir": "../operation/batch_create_store/files",
+    # "template_store_path": "../operation/report_template/",
+    # "monitor_alert_mail_list": ['mengzhaoying@gikoo.cn','quyilin@gikoo.cn','makun@gikoo.cn'],
+    # "nfs_root_path": "../nfs",
+    # "monitor_task_release": False,
+    # "product_monitor_info": {'domain':'gikoo', 'account':'test1@gk.cn'},
+    # "gikoo_service_phone": "4008205555",
+    # 'rpc_server': 'tcp://0.0.0.0:4242',
+}
+
+
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
