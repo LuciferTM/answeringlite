@@ -133,6 +133,9 @@ MIDDLEWARE_CLASSES = (
     # 'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
 ANONYMOUS_USER_ID = -1
+MAIN_LOG_NAME = "mainlog"
+
+
 ROOT_URLCONF = 'answeringlite.urls'
 
 # Python dotted path to the WSGI application used by Django's runserver.
