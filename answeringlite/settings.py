@@ -134,7 +134,7 @@ MIDDLEWARE_CLASSES = (
 )
 ANONYMOUS_USER_ID = -1
 MAIN_LOG_NAME = "mainlog"
-
+DEFAULT_CHARSET="utf-8"
 
 ROOT_URLCONF = 'answeringlite.urls'
 
