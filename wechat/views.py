@@ -11,7 +11,8 @@ logger = gikoo_logger()
 #XMLParser supports only 'application/xml'
 class TextXMLParser(XMLParser):
     media_type = 'text/xml'
-
+class JsonTextXMLParser(XMLParser):
+    media_type = 'application/json'
 
 '''公众号服务器入口 '''
 class WechatLinkIn(APIView):
